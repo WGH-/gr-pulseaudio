@@ -61,5 +61,5 @@ install(
     FILES
     pulseaudio_swig.i
     ${CMAKE_CURRENT_BINARY_DIR}/pulseaudio_swig_doc.i
-    DESTINATION ${GR_INCLUDE_DIR}/pulseaudio/swig
+    DESTINATION ${GR_INCLUDE_DIR}/gr-pulseaudio/swig
 )
