@@ -22,7 +22,7 @@
 #ifndef INCLUDED_PULSEAUDIO_PA_SINK_H
 #define INCLUDED_PULSEAUDIO_PA_SINK_H
 
-#include <pulseaudio/api.h>
+#include <gr-pulseaudio/api.h>
 #include <gnuradio/sync_block.h>
 
 namespace gr {
