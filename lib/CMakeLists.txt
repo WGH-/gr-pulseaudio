@@ -39,7 +39,7 @@ endif(NOT pulseaudio_sources)
 
 add_library(gnuradio-pulseaudio SHARED ${pulseaudio_sources})
 target_link_libraries(gnuradio-pulseaudio ${Boost_LIBRARIES}
-    ${GNURADIO_ALL_LIBRARIES} pulse-simple)
+    ${GNURADIO_ALL_LIBRARIES} ${LIBPULSE_SIMPLE_LIBRARIES})
 set_target_properties(gnuradio-pulseaudio PROPERTIES DEFINE_SYMBOL "gnuradio_pulseaudio_EXPORTS")
 
 if(APPLE)
@@ -76,7 +76,7 @@ target_link_libraries(
   ${GNURADIO_RUNTIME_LIBRARIES}
   ${Boost_LIBRARIES}
   ${CPPUNIT_LIBRARIES}
-  pulse-simple
+  ${LIBPULSE_SIMPLE_LIBRARIES}
   gnuradio-pulseaudio
 )
 
